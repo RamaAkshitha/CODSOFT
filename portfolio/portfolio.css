@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@400..700&family=Kalam:wght@300&family=Nosifer&display=swap');
+
+:root{
+    --primary-color: #0ef;
+    --primary-color-dark:#2ac9ce;
+    --text-dark: #dce2e9;
+    --text-light: #959ba8;
+    --extra-light: #102538;
+    --secondary-color: #1f2937;
+    --max-width:1200px 
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--extra-light);
+}
+
+nav{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    
+}
+.nav_con{
+    max-width: var(--max-width);
+    background-color: var(--secondary-color);
+    margin: auto;
+    display: flex;
+    padding:  1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: "Dancing Script", cursive;
+}
+nav .logo a:hover{
+    color: var(--primary-color-dark)
+
+}
+nav .checkbox{
+    display: none;
+}
+nav input{
+    display: none;
+}
+nav .checkbox i{
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+ul li a{
+    padding: 0.5rem 1rem ;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+
+ul li a:hover{
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    
+}
+ul button{
+    background-color: var(--primary-color);
+    border: var(--primary-color);
+    color: var(--extra-light);
+    margin-left: 10rem;
+    cursor: pointer;
+    width: 8rem; font-weight: 500;
+    border-radius: 5rem;
+    height: 2rem;
+    outline: none;
+}
+ul button:hover{
+    font-weight: 600;
+    background-color: var(--primary-color);
+    box-shadow:0 2px 15px var(--primary-color);
+}
+
+.section{
+    background-color: var(--extra-light);
+}
+.section_container{
+    height: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 3rem;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.image img{
+    margin-left: 20rem;
+    margin-right: 10rem;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.sub_title{
+    letter-spacing: 2px;
+    color: var(--text-light);
+    font-weight: 400;
+    margin-top: 14rem;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+}
+.title{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+.title span{
+    font-weight: 600;
+}
+.description{
+    line-height: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+.btns{
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+.btns button{
+    font-size: .7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    outline: none;
+    padding: .5rem 3rem;
+    border:1px solid var(--primary-color);
+    background-color:var(--primary-color);
+    border-radius: 10px;
+    color: var(--extra-light);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btns button:hover{
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+     box-shadow:0 2px 15px var(--primary-color);
+     font-weight: 700;
+}
+.image{
+    display: flex;
+    place-items: center;
+
+}
+.image img{
+    width: min(25rem , 70%);
+    border-radius: 100%;
+    box-shadow: 0 0 25px var(--primary-color-dark),
+                0 0 50px var(--primary-color-dark);
+    margin-top: 13rem;
+}
+/* About me */
+.ab h1{
+    text-align: center;
+    margin-bottom: 5rem;
+    color: var(--text-dark);
+}
+.ab h3{
+    text-align: center;
+    margin-left: 8rem;
+    color: var(--primary-color-dark);
+}
+.about_me{
+    display: flex;
+    flex-direction: row;
+    margin-right: 12rem;
+}
+.card1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15rem;
+    margin-top: rem;
+    color: var(--text-dark);
+    text-align: justify;
+}
+.img img{
+    width: 250%;
+    margin-bottom: 5rem;
+    border-radius: 100%;
+    border: #1f2937;
+    box-shadow: 0 0 25px var(--primary-color),
+                0 0 50px var(--primary-color);
+}
+.about{
+    margin-right: 15rem; 
+    
+}
+.about p{
+    align-content: center;
+}
+.my_skill h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+}
+.skill img{
+    width: 50%;
+    margin-left: 20.5rem;
+}
+.get_in_touch{
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--text-dark);
+}
+.get_in_touch span{
+    color: var(--primary-color);
+}
+.inputbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    padding: 0.7rem;
+    margin-left: 1rem;
+    width: 20%; color: var(--text-dark);
+    margin-bottom: 1rem;
+    background-color: #121820;
+    border: var(--secondary-color);
+    border-radius: 0.5rem;
+}
+textarea{
+    width: 25rem;
+    margin-left: 21.4rem;
+    padding: 0.5rem;
+    width: 44%; color: var(--text-dark);
+    height: 9rem;
+    background-color: #121820;
+    border: #121820;
+    border-radius: 0.5rem;
+}
+.textar button{
+    font-weight: 500;
+    margin-left: 33.5rem;
+    width: 13%; height: 2rem; 
+    margin-top: 1rem; background-color: var(--primary-color);
+    margin-bottom: 3rem; border-radius: 0.5rem; border: var(--primary-color);
+}
+.textar button:hover{
+    background-color: var(--primary-color);  font-weight: 700;
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+@media (width < 750px){
+    nav .checkbox{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 95%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+
+    }
+    nav #check:checked ~ ul{
+        left: 0;
+    }
+    ul li a{
+        font-size: 1rem;
+    }
+    .section_container{
+        padding: 10rem 1rem 5rem 1rem;
+        text-align: center;
+    }
+    .card .image{
+        margin-left: 20rem;
+        margin-right: 10rem;
+    }
+    .btn{
+        margin: auto;
+    }
+}
